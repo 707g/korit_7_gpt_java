@@ -22,14 +22,14 @@ public class Main4 {
             numberList2.add(num * 10);
         }
 
-        // 1-3)
-        // List<Integer> numberList2 = new ArrayList<>();
-        // numberList.forEach(n -> numberList2.add(n * 10));
-
         // 2-1)
         numberList3 = numberList.stream()
                 .map(number -> number * 10)
                 .collect(Collectors.toList());
+
+        // 1-3)
+        // final List<Integer> numberList4 = new ArrayList<>();
+        // numberList.forEach(n -> numberList4.add(n * 10));
 
         System.out.println(numberList);
         System.out.println(numberList2);
